@@ -2,6 +2,7 @@
     session_start();
     require_once("controllers/principal_controllers.php");
     require_once("controllers/usuario_controllers.php");
+    require_once("controllers/perfil_controllers.php");
     require_once("utils/seg.php");
 
     if (count($_GET)==0)

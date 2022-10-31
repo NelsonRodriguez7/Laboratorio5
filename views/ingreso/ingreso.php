@@ -22,20 +22,29 @@
                     <input type="password" class="form-control" id="exampleInputText1" aria-describedby="textHelp" name="txtContraseña_Usuario">
                     <div id="textHelp" class="form-text"></div>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="ckrecordar" type="checkbox" value="1" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Recordar Datos
+                    </label>
+                </div>
+                <br>
                 <input type="hidden" value="<?php echo seg::getToken() ?>" name="token"/>
                 <button type="subtmit" class="btn btn-success" style="width: 10rem;">Login</button>
                 </form>
                 <br>
-                <spam>¿No tienes una cuenta? Click aqui para crear una</spam>
+                <spam>Click Aqui Para Desplegar los usuarios</spam>
                 <p>
                     <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Link with href
+                        Desplegar
                     </a>
-                    
                 </p>
                     <div class="collapse" id="collapseExample">
                     <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        <p>Correo: usuario1@hotmail.com</p>
+                        <p>Correo: usuario2@hotmail.com</p>
+                        <p>Correo: usuario3@hotmail.com</p>
+                        <p>Password para todos los usuarios: 12345</p>
                     </div>
                     </div>
             </div>
